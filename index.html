@@ -3,31 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Best Freelance Websites — Find Better Places to Hire</title>
-<meta name="description" content="Discover freelance websites, niche talent networks, marketplaces and hiring resources by project type.">
+<title>Best Freelance Websites — Something Bright Is Coming</title>
+<meta name="description" content="A new guide to the best freelance websites, marketplaces, talent networks and places to hire online.">
 <style>
 :root{
-  --bg:#fdf8ee;
-  --panel:#fffdf8;
-  --panel-soft:#f9edd3;
-  --text:#24180f;
-  --muted:#756553;
-  --accent:#c58a18;
-  --accent-deep:#9a6708;
-  --line:#ead7b0;
-  --shadow:0 10px 30px rgba(122, 86, 20, 0.08);
+  --sun:#ffd400;
+  --gold:#f5b800;
+  --orange:#ff8a00;
+  --deep:#8f4d00;
+  --cream:#fff9e6;
+  --paper:#fffdf7;
+  --ink:#241400;
+  --muted:#76552b;
+  --line:#f1c65c;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   margin:0;
   font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);
   background:
-    radial-gradient(circle at top, rgba(245,223,173,.35), transparent 30%),
-    var(--bg);
-  color:var(--text);
+    radial-gradient(circle at 50% -10%, rgba(255,255,255,.95) 0%, rgba(255,240,120,.55) 24%, transparent 50%),
+    linear-gradient(180deg,#fff8cf 0%,#fffaf0 52%,#fffdf8 100%);
 }
-.wrap{max-width:1100px;margin:auto;padding:0 24px}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+
 nav{
   display:flex;
   justify-content:space-between;
@@ -35,150 +36,218 @@ nav{
   padding:26px 0;
 }
 .logo{
-  font-weight:850;
-  letter-spacing:-.03em;
   font-size:20px;
+  font-weight:900;
+  letter-spacing:-.035em;
 }
 .pill{
-  background:var(--panel-soft);
-  color:var(--accent-deep);
-  border:1px solid #ebd39f;
+  padding:9px 14px;
   border-radius:999px;
-  padding:8px 12px;
-  font-size:14px;
-  font-weight:600;
+  border:1px solid #e9b734;
+  background:rgba(255,255,255,.6);
+  color:#8d5700;
+  font-size:13px;
+  font-weight:800;
+  box-shadow:0 6px 20px rgba(214,139,0,.08);
 }
+
 .hero{
   text-align:center;
-  padding:96px 0 68px;
+  padding:105px 0 75px;
 }
-.hero small{
-  color:var(--accent-deep);
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:.14em;
+.eyebrow{
+  display:inline-block;
   font-size:12px;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#9b5f00;
+  margin-bottom:18px;
 }
 h1{
-  font-size:clamp(48px,7vw,84px);
-  line-height:1;
-  letter-spacing:-.055em;
-  max-width:900px;
-  margin:18px auto 22px;
+  margin:0 auto;
+  max-width:920px;
+  font-size:clamp(52px,8vw,96px);
+  line-height:.93;
+  letter-spacing:-.06em;
+}
+.glow{
+  background:linear-gradient(90deg,#d88300,#ff9d00,#ffd400,#ff9d00,#d88300);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
 .lead{
   max-width:760px;
-  margin:0 auto;
-  color:var(--muted);
+  margin:28px auto 0;
   font-size:21px;
   line-height:1.65;
+  color:var(--muted);
 }
-.band{
-  background:linear-gradient(to bottom, rgba(255,255,255,.35), rgba(255,255,255,.75));
-  border-top:1px solid rgba(234,215,176,.7);
-  border-bottom:1px solid rgba(234,215,176,.7);
+
+.statement{
+  margin:20px auto 86px;
+  max-width:900px;
+  padding:34px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.9),rgba(255,245,183,.8));
+  box-shadow:
+    0 18px 50px rgba(211,131,0,.10),
+    inset 0 1px 0 rgba(255,255,255,.8);
+  text-align:center;
 }
-.categories{
+.statement strong{
+  display:block;
+  font-size:clamp(26px,4vw,42px);
+  line-height:1.1;
+  letter-spacing:-.035em;
+  margin-bottom:16px;
+}
+.statement p{
+  margin:0 auto;
+  max-width:700px;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.7;
+}
+
+.grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:16px;
-  padding:64px 0 82px;
+  padding-bottom:90px;
 }
 .card{
-  background:var(--panel);
+  min-height:180px;
+  border-radius:20px;
+  padding:24px;
+  background:rgba(255,255,255,.78);
   border:1px solid var(--line);
-  border-radius:18px;
-  padding:22px;
-  box-shadow:var(--shadow);
+  box-shadow:0 14px 34px rgba(210,135,0,.08);
 }
 .card strong{
   display:block;
+  font-size:18px;
   margin-bottom:10px;
-  font-size:17px;
 }
 .card span{
+  color:var(--muted);
+  line-height:1.55;
+  font-size:14px;
+}
+
+.sunbar{
+  height:5px;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--orange),var(--sun),var(--orange));
+  box-shadow:0 0 25px rgba(255,190,0,.45);
+  margin-bottom:38px;
+}
+
+footer{
+  padding:0 0 48px;
+  text-align:center;
   color:var(--muted);
   font-size:14px;
   line-height:1.6;
 }
-.note{
-  max-width:760px;
-  margin:0 auto;
-  padding:0 0 84px;
-  text-align:center;
-  color:var(--muted);
-  font-size:18px;
-  line-height:1.7;
+footer b{color:#9a6100}
+
+@media(max-width:850px){
+  .grid{grid-template-columns:1fr 1fr}
 }
-footer{
-  border-top:1px solid var(--line);
-  padding:28px 0 42px;
-  color:var(--muted);
-  font-size:14px;
-  text-align:center;
-}
-@media(max-width:900px){
-  .categories{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
-  nav{gap:14px;align-items:flex-start;flex-direction:column}
-  .categories{grid-template-columns:1fr}
-  .hero{padding-top:70px}
+@media(max-width:600px){
+  nav{align-items:flex-start;gap:14px;flex-direction:column}
+  .hero{padding-top:72px}
+  .grid{grid-template-columns:1fr}
   .lead{font-size:18px}
 }
 </style>
 </head>
+
 <body>
 <div class="wrap">
-  <nav>
-    <div class="logo">Best Freelance Websites</div>
-    <div class="pill">Golden discovery engine 🐸</div>
-  </nav>
 
-  <section class="hero">
-    <small>Find the right place to hire</small>
-    <h1>Not every freelance website deserves your budget.</h1>
-    <p class="lead">
-      We’re building a practical guide to freelance websites, niche talent networks,
-      marketplaces and hiring resources — organized around the kind of work you
-      actually need done.
-    </p>
-  </section>
-</div>
+<nav>
+  <div class="logo">Best Freelance Websites</div>
+  <div class="pill">THE SUN IS COMING UP ☀️</div>
+</nav>
 
-<div class="band">
-  <div class="wrap">
-    <section class="categories">
-      <div class="card">
-        <strong>Design</strong>
-        <span>Designers, branding, illustration, creative production and visual specialists.</span>
-      </div>
-      <div class="card">
-        <strong>Development</strong>
-        <span>Software, web, automation, blockchain and technical talent across project types.</span>
-      </div>
-      <div class="card">
-        <strong>Marketing</strong>
-        <span>Content, SEO, paid media, community, distribution and audience growth.</span>
-      </div>
-      <div class="card">
-        <strong>Operations</strong>
-        <span>Virtual assistants, research, support, admin and execution-oriented help.</span>
-      </div>
-    </section>
+<section class="hero">
+  <div class="eyebrow">The internet has enough lists</div>
 
-    <div class="note">
-      Some freelance websites are great for speed. Some are better for vetted talent.
-      Some are built for specialists. We’re mapping the landscape so buyers can make
-      better decisions before they spend.
-    </div>
+  <h1>
+    We’re building the
+    <span class="glow">brightest place on the internet</span>
+    to figure out where to hire.
+  </h1>
+
+  <p class="lead">
+    Thousands of freelance websites exist. Some are excellent.
+    Some are expensive. Some are built for specialists.
+    Some appear to have been assembled during a lunch break.
+    We intend to sort this out.
+  </p>
+</section>
+
+<section class="statement">
+  <strong>The giant freelance website map nobody bothered to build.</strong>
+
+  <p>
+    Marketplaces. Talent networks. Specialist communities. Job boards.
+    Direct-hire platforms. Strange little corners of the internet where
+    unusually talented people appear to live.
+    We’re cataloging the landscape, comparing the tradeoffs and making
+    the whole thing easier to navigate.
+  </p>
+</section>
+
+<section class="grid">
+
+  <div class="card">
+    <strong>Who actually has the talent?</strong>
+    <span>
+      We want to know where strong designers, developers, writers,
+      marketers and operators are actually working.
+    </span>
   </div>
-</div>
 
-<div class="wrap">
-  <footer>
-    The directory is under construction. Several suspiciously well-dressed frogs are involved.
-  </footer>
+  <div class="card">
+    <strong>What does it really cost?</strong>
+    <span>
+      Platform fees, hiring costs, subscriptions, commissions,
+      minimum spends and the expensive details hiding in the margins.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>What protects the buyer?</strong>
+    <span>
+      Screening, milestones, escrow, dispute systems, payment rules
+      and what happens when a project goes sideways.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>Where should you actually hire?</strong>
+    <span>
+      Not one universal winner. Different work needs different rooms.
+      We’re building the map.
+    </span>
+  </div>
+
+</section>
+
+<div class="sunbar"></div>
+
+<footer>
+  <b>Coming soon.</b><br>
+  The research department is operational.
+  Several cartoon frogs in suspiciously expensive suits have commandeered the conference room.
+</footer>
+
 </div>
 </body>
 </html>
