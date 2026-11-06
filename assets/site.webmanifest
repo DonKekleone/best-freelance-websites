@@ -1,0 +1,21 @@
+{
+  "name": "Best Freelance Websites",
+  "short_name": "BF Websites",
+  "description": "Find better places to hire by the job you need done.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#b45309",
+  "theme_color": "#b45309",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

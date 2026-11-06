@@ -46,9 +46,8 @@ header.site {
   color: inherit; text-decoration: none; font-weight: 700;
 }
 .brand-mark {
-  width: 2rem; height: 2rem; border-radius: 8px;
-  background: linear-gradient(145deg, #b45309, #d97706);
-  display: grid; place-items: center; color: #fff; font-size: .85rem;
+  /* overridden in Image batch 1 block below */
+  width: 2rem; height: 2rem;
 }
 .nav-links {
   display: flex; flex-wrap: wrap; gap: .75rem 1rem;
@@ -124,4 +123,87 @@ ul.check li { margin: .35rem 0; }
 code { background: #eef2f7; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
 @media (max-width: 520px) {
   .nav { align-items: flex-start; }
+}
+
+/* === Image batch 1 styles === */
+.brand-mark {
+  width: 2rem; height: 2rem; border-radius: 8px;
+  background: transparent; padding: 0; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.brand-mark img {
+  width: 2rem; height: 2rem; display: block;
+}
+.hero-with-mascot {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+.hero-copy { min-width: 0; }
+.hero-mascot {
+  display: none;
+  margin: 0;
+  justify-self: end;
+}
+.hero-mascot img {
+  width: min(100%, 22rem);
+  height: auto;
+  display: block;
+}
+@media (min-width: 900px) {
+  .hero-with-mascot {
+    grid-template-columns: minmax(0, 1fr) minmax(14rem, 22rem);
+  }
+  .hero-mascot { display: block; }
+}
+.diagram {
+  margin: 1.5rem 0 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.diagram img, .diagram picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.diagram-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .5rem;
+  list-style: none;
+  margin: .85rem 0 0;
+  padding: 0;
+  font-size: .85rem;
+  color: var(--muted);
+  text-align: center;
+}
+.diagram-steps li { margin: 0; padding: 0 .15rem; }
+.diagram-steps strong { display: block; color: var(--ink); font-size: .9rem; }
+.diagram-dispute {
+  margin: .75rem 0 0;
+  font-size: .9rem;
+  color: var(--muted);
+  text-align: center;
+}
+.diagram figcaption {
+  margin-top: .85rem;
+  font-size: .9rem;
+  color: var(--muted);
+}
+@media (max-width: 700px) {
+  .diagram-steps {
+    grid-template-columns: 1fr;
+    text-align: left;
+    counter-reset: step;
+  }
+  .diagram-steps li { display: flex; gap: .5rem; align-items: baseline; }
+  .diagram-steps li::before {
+    content: counter(step);
+    counter-increment: step;
+    font-weight: 700;
+    color: var(--accent);
+  }
 }
