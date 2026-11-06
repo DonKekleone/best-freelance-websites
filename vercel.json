@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.bestfreelancewebsites.com" }],
+      "destination": "https://bestfreelancewebsites.com/:path*",
+      "permanent": true
+    }
+  ]
+}
